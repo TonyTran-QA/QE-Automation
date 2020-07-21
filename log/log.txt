@@ -1,0 +1,177 @@
+[1594174468.519][INFO]: Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 45337
+[1594174468.519][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1594174469.020][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [  ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [  ],
+         "extensions": [  ]
+      }
+   }
+}
+[1594174469.024][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1594174469.025][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1594174469.032][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --load-extension="C:\Users\admin\AppData\Local\Temp\scoped_dir388_614998106\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\admin\AppData\Local\Temp\scoped_dir388_868864830" data:,
+[1594174469.463][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1594174471.470][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "83.0.4103.116",
+      "chrome": {
+         "chromedriverVersion": "83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})",
+         "userDataDir": "C:\\Users\\admin\\AppData\\Local\\Temp\\scoped_dir388_868864830"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:50778"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "5925b7a6fecc37169fa1591b8b8b421a"
+}
+[1594174471.475][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] COMMAND MaximizeWindow {
+
+}
+[1594174471.475][INFO]: Waiting for pending navigations...
+[1594174471.477][INFO]: Done waiting for pending navigations. Status: ok
+[1594174471.477][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1594174473.588][INFO]: Waiting for pending navigations...
+[1594174473.588][INFO]: Done waiting for pending navigations. Status: ok
+[1594174473.588][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] RESPONSE MaximizeWindow {
+   "height": 1056,
+   "width": 1936,
+   "x": -8,
+   "y": -8
+}
+[1594174473.592][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] COMMAND SetTimeouts {
+   "implicit": 10000
+}
+[1594174473.592][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] RESPONSE SetTimeouts
+[1594174473.617][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] COMMAND Navigate {
+   "url": "https://www.gotadi.com/#/"
+}
+[1594174473.618][INFO]: Waiting for pending navigations...
+[1594174473.618][INFO]: Done waiting for pending navigations. Status: ok
+[1594174473.831][INFO]: Waiting for pending navigations...
+[1594174475.690][INFO]: Done waiting for pending navigations. Status: ok
+[1594174475.690][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] RESPONSE Navigate
+[1594174480.694][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] COMMAND SetTimeouts {
+   "implicit": 0
+}
+[1594174480.694][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] RESPONSE SetTimeouts
+[1594174480.696][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] COMMAND FindElements {
+   "using": "css selector",
+   "value": ".ematicOverlayContent.ematicOverlayContent0"
+}
+[1594174480.699][INFO]: Waiting for pending navigations...
+[1594174480.700][INFO]: Done waiting for pending navigations. Status: ok
+[1594174480.707][INFO]: Waiting for pending navigations...
+[1594174480.708][INFO]: Done waiting for pending navigations. Status: ok
+[1594174480.708][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] RESPONSE FindElements [  ]
+[1594174480.713][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] COMMAND SetTimeouts {
+   "implicit": 10000
+}
+[1594174480.713][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] RESPONSE SetTimeouts
+[1594174480.715][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[@id='account-menu']//div[@class='sm-group-action-account']"
+}
+[1594174480.715][INFO]: Waiting for pending navigations...
+[1594174480.716][INFO]: Done waiting for pending navigations. Status: ok
+[1594174480.723][INFO]: Waiting for pending navigations...
+[1594174480.724][INFO]: Done waiting for pending navigations. Status: ok
+[1594174480.724][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "1739531d-6565-40aa-911d-5857cafbfb2a"
+}
+[1594174480.728][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] COMMAND ClickElement {
+   "id": "1739531d-6565-40aa-911d-5857cafbfb2a"
+}
+[1594174480.728][INFO]: Waiting for pending navigations...
+[1594174480.728][INFO]: Done waiting for pending navigations. Status: ok
+[1594174480.781][INFO]: Waiting for pending navigations...
+[1594174480.782][INFO]: Done waiting for pending navigations. Status: ok
+[1594174480.782][INFO]: [5925b7a6fecc37169fa1591b8b8b421a] RESPONSE ClickElement

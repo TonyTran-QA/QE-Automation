@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="qa-support-0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/qa-support-0.0.1-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/service-corp-server-0.0.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

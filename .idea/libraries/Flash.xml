@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Flash">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/Flash.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
