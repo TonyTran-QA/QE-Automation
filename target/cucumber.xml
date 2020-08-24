@@ -1,83 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="180.841025">
-<testcase classname="Check Login" name="Do Login New Company Play Online Casino" time="45.753425">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="43.793671">
+<testcase classname="Check Browser" name="Bet Game Grand Hall" time="43.793671">
 <system-out><![CDATA[Given I open Home...........................................................passed
 When I doLogin with thing "AccPass".........................................passed
 And I click on submit.......................................................passed
-And I verify my account.....................................................passed
-And I switch Language.......................................................passed
-And I choose game and "SexyHall"............................................passed
-And I close.................................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Check Login" name="Do Login New Company Play Online Casino 2" time="40.801451">
-<system-out><![CDATA[Given I open Home...........................................................passed
-When I doLogin with thing "AccPass".........................................passed
-And I click on submit.......................................................passed
-And I verify my account.....................................................passed
-And I switch Language.......................................................passed
-And I choose game and "HGHall"..............................................passed
-And I close.................................................................passed
-]]></system-out>
-</testcase>
-<testcase classname="Check Login" name="Do Login New Company Play Online Casino 3" time="25.370717">
-<failure message="org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-CJFLG6H', ip: '192.168.0.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)&#13;&#10;&#9;at com.qa.Pages.HandleException.ElementProxy.checkForPopupAndKill(ElementProxy.java:31)&#13;&#10;&#9;at com.qa.Pages.HandleException.ElementProxy.invoke(ElementProxy.java:24)&#13;&#10;&#9;at com.sun.proxy.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at com.qa.newpages.LoginPages.MyAccount(LoginPages.java:104)&#13;&#10;&#9;at com.qa.newsteps.LoginSteps.iVerifyMyAccount(LoginSteps.java:60)&#13;&#10;&#9;at ✽.And I verify my account(DoLoginNewCompany.feature:8)&#13;&#10;"><![CDATA[Given I open Home...........................................................passed
-When I doLogin with thing "AccFailed_Pass"..................................passed
-And I click on submit.......................................................passed
-And I verify my account.....................................................failed
-And I switch Language.......................................................skipped
-And I choose game and "HGHall"..............................................skipped
-And I close.................................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-CJFLG6H', ip: '192.168.0.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
-	at com.qa.Pages.HandleException.ElementProxy.checkForPopupAndKill(ElementProxy.java:31)
-	at com.qa.Pages.HandleException.ElementProxy.invoke(ElementProxy.java:24)
-	at com.sun.proxy.$Proxy25.click(Unknown Source)
-	at com.qa.newpages.LoginPages.MyAccount(LoginPages.java:104)
-	at com.qa.newsteps.LoginSteps.iVerifyMyAccount(LoginSteps.java:60)
-	at ✽.And I verify my account(DoLoginNewCompany.feature:8)
-]]></failure>
-</testcase>
-<testcase classname="Check Login" name="Do Login New Company Play Online Casino 4" time="25.182425">
-<failure message="org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-CJFLG6H', ip: '192.168.0.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'&#10;Driver info: driver.version: RemoteWebDriver&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)&#13;&#10;&#9;at com.qa.Pages.HandleException.ElementProxy.checkForPopupAndKill(ElementProxy.java:31)&#13;&#10;&#9;at com.qa.Pages.HandleException.ElementProxy.invoke(ElementProxy.java:24)&#13;&#10;&#9;at com.sun.proxy.$Proxy25.click(Unknown Source)&#13;&#10;&#9;at com.qa.newpages.LoginPages.MyAccount(LoginPages.java:104)&#13;&#10;&#9;at com.qa.newsteps.LoginSteps.iVerifyMyAccount(LoginSteps.java:60)&#13;&#10;&#9;at ✽.And I verify my account(DoLoginNewCompany.feature:8)&#13;&#10;"><![CDATA[Given I open Home...........................................................passed
-When I doLogin with thing "AccFailed_Acc"...................................passed
-And I click on submit.......................................................passed
-And I verify my account.....................................................failed
-And I switch Language.......................................................skipped
-And I choose game and "HGHall"..............................................skipped
-And I close.................................................................skipped
-
-StackTrace:
-org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-CJFLG6H', ip: '192.168.0.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:780)
-	at com.qa.Pages.HandleException.ElementProxy.checkForPopupAndKill(ElementProxy.java:31)
-	at com.qa.Pages.HandleException.ElementProxy.invoke(ElementProxy.java:24)
-	at com.sun.proxy.$Proxy25.click(Unknown Source)
-	at com.qa.newpages.LoginPages.MyAccount(LoginPages.java:104)
-	at com.qa.newsteps.LoginSteps.iVerifyMyAccount(LoginSteps.java:60)
-	at ✽.And I verify my account(DoLoginNewCompany.feature:8)
-]]></failure>
-</testcase>
-<testcase classname="Check Login" name="Do Login Check Browser" time="43.733007">
-<system-out><![CDATA[Given I open Home...........................................................passed
-When I doLogin with thing "AccPass".........................................passed
-And I click on submit.......................................................passed
-And I verify my account.....................................................passed
-And I switch Language.......................................................passed
-And I choose game and "SexyHall"............................................passed
+And I choose game and "Grand Hall"..........................................passed
+And I play game.............................................................passed
 And I close.................................................................passed
 ]]></system-out>
 </testcase>

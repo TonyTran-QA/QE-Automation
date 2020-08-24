@@ -10,7 +10,6 @@ import com.aventstack.extentreports.reporter.ExtentXReporter;
 import gherkin.formatter.Formatter;
 import gherkin.formatter.Reporter;
 import gherkin.formatter.model.*;
-
 import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;

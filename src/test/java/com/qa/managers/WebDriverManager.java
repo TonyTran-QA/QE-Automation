@@ -106,4 +106,5 @@ public class WebDriverManager {
         return driver = new SafariDriver();
     }
 
+
 }

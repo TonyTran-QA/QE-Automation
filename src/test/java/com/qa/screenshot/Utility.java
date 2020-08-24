@@ -19,7 +19,6 @@ public class Utility
             SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH.mm.ss");
             Date date = new Date();
             File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-            fileName="Erros";
             FileUtils.copyFile(scrFile, new File("src/test/java/com/qa/screenshot/imgfailed/"+fileName+"-"+dateFormat.format(date)+".png"));
             System.out.println("Screenshot taken");
         }

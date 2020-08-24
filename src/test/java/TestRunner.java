@@ -4,6 +4,7 @@ import cucumber.api.CucumberOptions;
 import org.junit.runner.RunWith;
 
 
+
 @RunWith(ExtendedCucumber.class)
 
 @ExtendedCucumberOptions(jsonReport = "target/cucumber.json",
@@ -25,7 +26,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/features"},
         glue = {"com/qa/newsteps"},
         monochrome = true, dryRun = false, strict = true,
-        tags = {"@DoLoginNewCompany"}
+        tags = {"@CheckBrowser"}
 )
 public class TestRunner {
 }

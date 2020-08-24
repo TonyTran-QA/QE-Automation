@@ -17,8 +17,8 @@ public class BasePage {
     public WebDriverWait wait;
 
     //Constructor
-    public BasePage(WebDriver driver1, WebDriverWait wait) {
-        this.driver = driver1;
+    public BasePage(WebDriver driver, WebDriverWait wait) {
+        this.driver = driver;
         MyPageFactory.initElements(driver, this);
     }
 
@@ -53,7 +53,7 @@ public class BasePage {
         else return Integer.parseInt(numberOnly);
     }
 
-    void select_itemOf(List<WebElement> list, String textToSelected) {
+    public void select_itemOf(List<WebElement> list, String textToSelected) {
         for (WebElement element : list) {
             if (element.getText().trim().equalsIgnoreCase(textToSelected)) {
                 element.click();
@@ -69,32 +69,25 @@ public class BasePage {
     }
 
     public WebDriver switchToWindowHandle() {
-        String winHandleBefore = driver.getWindowHandle();
-        for (String winHandle : driver.getWindowHandles()) {
+        String winHandleBefore = this.driver.getWindowHandle();
+        for (String winHandle : this.driver.getWindowHandles()) {
             if (!winHandle.equals(winHandleBefore)) {
-                driver.switchTo().window(winHandle);
+                this.driver.switchTo().window(winHandle);
             } else {
-                driver.switchTo().window(winHandleBefore);
+                this.driver.switchTo().window(winHandleBefore);
             }
         }
-        return driver;
+        return this.driver;
     }
-
-    public void switchToWindow() {
-
-        String parentWindow = driver.getWindowHandle();
-        Set<String> handles = driver.getWindowHandles();
-        for (String windowHandle : handles) {
-            if (!windowHandle.equals(parentWindow)) {
-                driver.switchTo().window(windowHandle);
-                driver.close();
-                driver.switchTo().window(parentWindow);
-            }
+    public void SwitchToWindow() throws InterruptedException {
+        for (String popup : driver.getWindowHandles()) {
+            driver.switchTo().window(popup);
+            Thread.sleep(2000);
         }
+    }
 
-    }
-    public WebDriver getDriver() {
-        return driver;
-    }
+//    public WebDriver getDriver() {
+//        return driver;
+//    }
 
 }

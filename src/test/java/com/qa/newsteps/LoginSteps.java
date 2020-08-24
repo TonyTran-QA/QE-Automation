@@ -1,9 +1,9 @@
 package com.qa.newsteps;
 
-import com.github.javafaker.Faker;
-import com.qa.Pages.Hooks;
+
 import com.qa.cucumber.TestContext;
 import com.qa.newpages.LoginPages;
+import com.qa.videoreport.VideoRecorder_utlity;
 import com.servicecorp.core.utils.ReadProperties;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -13,13 +13,10 @@ import org.openqa.selenium.WebDriver;
 
 public class LoginSteps {
     public WebDriver driver;
-    public Faker faker;
     TestContext testContext;
     LoginPages loginPages;
 
     public LoginSteps(TestContext context) {
-        driver = Hooks.driver;
-        faker = new Faker();
         testContext = context;
         loginPages = testContext.getPageObjectManager().getLoginPages();
     }
@@ -78,19 +75,51 @@ public class LoginSteps {
                 loginPages.HGHall();
                 Thread.sleep(2000);
                 break;
-
+            case "AGHall":
+                System.out.println("AG HALL");
+                loginPages.AGHall();
+                Thread.sleep(2000);
+                break;
+            case "Grand Hall":
+                System.out.println("Grand Hall");
+                loginPages.GrandHall();
+                Thread.sleep(2000);
+                break;
         }
     }
 
     @Then("^I close$")
     public void i_close() throws Throwable {
+        VideoRecorder_utlity.stopRecord();
         loginPages.ClosePage();
     }
-    @Given("^I open Home please$")
-    public void i_open_Home_please() throws Throwable {
+
+    @When("^I click on funds$")
+    public void i_click_on_funds() throws Throwable {
+        loginPages.SelectFunds();
+
+    }
+    @And("^I select \"([^\"]*)\" \"([^\"]*)\" transfer$")
+    public void iSelectTransfer(String keySearch, String keySearch1) throws Throwable {
+        loginPages.select_From(keySearch);
+        loginPages.select_To(keySearch1);
+    }
+
+    @And("^I choose \"([^\"]*)\" is transfer$")
+    public void iChooseIsTransfer(String amount) throws Throwable {
+        loginPages.AmountTransfer(amount);
 
     }
 
 
+    @And("^I choose and add \"([^\"]*)\"$")
+    public void iChooseAndAdd(String namebank) throws Throwable {
+       loginPages.addBanks(namebank);
+    }
 
+
+    @And("^I play game$")
+    public void iPlayGame() throws InterruptedException {
+        loginPages.PlayGandHall();
+    }
 }
